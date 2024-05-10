@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: sbioapp
-        image: fra.ocir.io/frazjikiagro/spring-projects/sbio-hello-app:latest
+        image: fra.ocir.io/frazjikiagro/novirepo/mojrepo:latest
         ports:
         - containerPort: 8080
 ---
