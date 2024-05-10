@@ -74,4 +74,4 @@ jobs:
         with:
           cluster: ${{ secrets.OKE_CLUSTER_OCID }}
       - name: Run Kubectl
-        run: kubectl appy -f sbio-hello-app.yaml
+        run: kubectl apply -f sbio-hello-app.yaml
