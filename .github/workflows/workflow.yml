@@ -68,6 +68,12 @@ jobs:
     needs: build-job
     runs-on: ubuntu-latest
     steps:
+      - name: "Start deploy job"
+        run: |
+          echo "Starting the deploy job."
+      - name: Checkout
+        uses: actions/checkout@v4
+        
       - name: Configure Kubectl
         uses: oracle-actions/configure-kubectl-oke@v1.3.2
         id: kubectl-oke-action
